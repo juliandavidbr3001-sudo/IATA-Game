@@ -11,7 +11,7 @@ import time
 # ==============================
 @st.cache_data
 def load_data():
-    df = pd.read_csv("C:/Users/BARRETOROMEROJULIAND/Downloads/departamentos_colombia.csv")
+    df = pd.read_csv("departamentos_colombia.csv")
     return df
 
 df = load_data()
@@ -199,3 +199,4 @@ best_scores_sorted = sorted(st.session_state.best_scores + [st.session_state.sco
 st.session_state.best_scores = best_scores_sorted
 for s in best_scores_sorted:
     st.sidebar.write(s)
+

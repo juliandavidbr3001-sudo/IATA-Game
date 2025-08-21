@@ -115,7 +115,7 @@ st.write(question)
 # ==============================
 # MAPA INTERACTIVO MEJORADO
 # ==============================
-m = folium.Map(location=[4.5709, -74.2973], zoom_start=6, use_container_width=True, use_container_height=True)
+m = folium.Map(location=[4.5709, -74.2973], zoom_start=6, use_container_width=True, height=400)
 
 
 for idx, r in df.iterrows():
@@ -200,6 +200,7 @@ best_scores_sorted = sorted(st.session_state.best_scores + [st.session_state.sco
 st.session_state.best_scores = best_scores_sorted
 for s in best_scores_sorted:
     st.sidebar.write(s)
+
 
 
 

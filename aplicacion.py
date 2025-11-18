@@ -20,7 +20,7 @@ df = load_data()
 # CONFIGURACIÓN DE LA PÁGINA
 # ==============================
 st.set_page_config(page_title="Colombia GeoGame", layout="wide")
-st.title("🌎 Colombia GeoGame - Aprende y Diviértete!")
+st.title("Colombia GeoGame")
 
 # ==============================
 # MODOS DE JUEGO
@@ -200,6 +200,7 @@ best_scores_sorted = sorted(st.session_state.best_scores + [st.session_state.sco
 st.session_state.best_scores = best_scores_sorted
 for s in best_scores_sorted:
     st.sidebar.write(s)
+
 
 
 
